@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-//99test
+
     $( ".cross" ).hide();
     $( ".menu" ).hide();
     $( ".hamburger" ).click(function() {

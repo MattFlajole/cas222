@@ -1,0 +1,154 @@
+@import 'palette.less';
+@import 'mixins.less';
+
+body {
+  font-family: "Open Sans", serif;
+  font-size: 12px;
+  line-height: 28px;
+  background-color: @lightColor;
+  color: @darkColor;
+}
+
+
+header {
+  width: 100%;
+  height: 7em;
+  background: url("../images/header_background.png");
+  background-size: cover;
+  display: inline-block;
+
+  img {
+    float: left;
+    width: 4rem;
+    height: auto;
+    padding: 2em 0 0 2em;
+  }
+}
+h1 {
+  .headingStyle("Lemonada", cursive; @darkColor1; 1.6rem);
+  .textCenter;
+  padding: 1.1em 0 0 .5em;
+}
+
+nav {
+  .hamburger{
+    background:none;
+    position:relative;
+    top:0;
+    right:0;
+    line-height:45px;
+    padding:5px 15px 0 15px;
+    color:#999;
+    border:0;
+    font-size:1.4em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+  .cross{
+    background:none;
+    position:relative;
+    padding:7px 15px 7px 15px;
+    color:#999;
+    border:0;
+    font-size:3em;
+    line-height:65px;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+  .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+  .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+  .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+  .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+  .menu ul li a { text-decoration:none;  margin: 0; color:#666;}
+  .menu ul li a:hover {  color: #666; text-decoration:none;}
+  .menu a{text-decoration:none; color:#666;}
+  .menu a:hover{text-decoration:none; color:#666;}
+}
+
+
+
+main {
+  padding: 1em;
+  width: 100%;
+  .top {
+    border: 1px solid @greyColor3;
+  }
+  aside {
+  }
+  h2 {
+    .headingStyle("Lemonada", cursive; @color1; 1.4em);
+    .textCenter;
+  }
+  h3 {
+    .headingStyle("Lemonada", cursive; @color2; 1.2em);
+    .textCenter;
+  }
+  p {
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+}
+
+footer {
+  background-color: @darkColor;
+  color: @lightColor1;
+  clear: both;
+  .textCenter;
+  padding-top: 1em;
+
+  h3 {
+    text-decoration: underline;
+    .headingStyle("Lemonada", cursive; @lightColor; 1em);
+  }
+
+  p {
+  }
+
+  ul {
+    .textCenter;
+    .noBull;
+
+    li {
+      display: inline-block;
+      .noLine;
+
+      a {
+        &:link {
+          color: @lightColor5;
+        }
+
+        &:visited {
+          color: @lightColor3;
+        }
+
+        &:hover {
+          .expand;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px)  {
+  .hamburger, .cross {
+    display: none;
+  }
+
+ nav .menu {
+
+    display: inline-block;
+  }
+aside {
+  position: absolute;
+  display: block;
+  float: right;
+  width: 20%;
+  height: auto;
+}
+
+
+}

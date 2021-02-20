@@ -1,0 +1,85 @@
+.headingStyle(@paramFontFamily: "Lemonada", cursive; @paramColor: #000; @paramSize: 1.4rem) {
+  color: @paramColor;
+  font-family: @paramFontFamily;
+  font-size: @paramSize;
+  font-weight: bold;
+  line-height: @paramSize;
+  margin-top: @paramSize / 4;
+  margin-bottom: @paramSize / 4;
+  text-transform: uppercase;
+}
+
+.radiusBgColor(@paramRadius: 4px; @paramColor: #CCC) {
+  -moz-border-radius: @paramRadius;
+  -webkit-border-radius: @paramRadius;
+  border-radius: @paramRadius;
+  background-color: @paramColor;
+}
+
+.dropShadow (@paramHorOffset: 4px; @paramVertOffset: 4px; @paramBlur: 4px; @paramColor: #AAA) {
+  -webkit-box-shadow: @paramHorOffset @paramVertOffset @paramBlur @paramColor;
+  -moz-box-shadow: @paramHorOffset @paramVertOffset @paramBlur @paramColor;
+  box-shadow: @paramHorOffset @paramVertOffset @paramBlur @paramColor;
+}
+.linGradient(@paramDirection: 90deg; @paramFirstColor: #CCC; @paramSecondColor: #AAA) {
+  background: @paramFirstColor;
+  background: -o-linear-gradient(@paramDirection - 90deg, @paramFirstColor, @paramSecondColor);
+  background: -moz-linear-gradient(@paramDirection - 90deg, @paramFirstColor, @paramSecondColor);
+  background: linear-gradient(@paramDirection, @paramFirstColor, @paramSecondColor);
+}
+
+.buttonMaker(@color: #FF850F) {
+  background: @color;
+  box-shadow: 0 6px 0 darken(@color, 7%);
+  &:active {
+    box-shadow: 0 2px 0 darken(@color, 7%);
+    position: relative;
+    top: 2px;
+  }
+}
+
+
+.textSet(@paramColor: #000; @paramSize: 16px) {
+  color: @paramColor;
+  font-size: @paramSize;
+  line-height: @paramSize * 2;
+  margin-top: @paramSize / 2;
+  margin-bottom: @paramSize / 2;
+}
+
+.expand() {
+  transform: scale(1.1);
+  display: inline-block;
+}
+
+.halfTrans() {
+  opacity: 0.5;
+}
+
+.underItal() {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.upperBold() {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.noBull() {
+  list-style-type: none;
+  padding: 1em;
+}
+
+.noLine() {
+  text-decoration: none;
+}
+
+.textCenter() {
+  text-align: center;
+}
+
+.borderBold() {
+  border: 1px double;
+  font-weight: bold;
+}

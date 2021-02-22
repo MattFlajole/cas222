@@ -1,6 +1,28 @@
-$( document ).ready(function() {
+$(document).ready(function(){
+    $(".topnav > a").click(function() {
+        $(".hamburger-menu").addClass("active");
+    });
+    $(".close").click(function() {
+        $(".hamburger-menu").removeClass("active");
+    });
+});
 
-    $( ".cross" ).hide();
+
+/*
+$( document ).ready(function() {
+    function myFunction() {
+        let x = $('#myTopnav')[0];
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+});
+*/
+
+
+    /*$( ".cross" ).hide();
     $( ".menu" ).hide();
     $( ".hamburger" ).click(function() {
         $( ".menu" ).slideToggle( "slow", function() {
@@ -15,8 +37,7 @@ $( document ).ready(function() {
             $( ".hamburger" ).show();
         });
     });
-
-});
+*/
 
 
 /*

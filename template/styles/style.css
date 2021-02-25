@@ -17,7 +17,7 @@ header {
 }
 header img {
   float: left;
-  width: 6em;
+  width: 5em;
   height: auto;
   padding: 1.3em 0 0 2em;
 }
@@ -146,26 +146,20 @@ footer ul li a:hover {
 }
 @media screen and (min-width: 480px) {
   header {
-    height: 4.5em;
+    height: 5em;
   }
   h1 {
     font-size: 1.6em;
     padding: 1em 0 0 0.5em;
   }
   header img {
-    width: 4.5em;
-    height: auto;
-    padding: 1em 0 0 1em;
+    padding: 0.5em 0 0 1em;
   }
   nav {
     font-size: 0.4em;
   }
   Nav ul {
     padding: 1.2em 0 0 0;
-  }
-  nav li {
-    width: 16.6em;
-    padding: 0;
   }
   main h2 {
     font-size: 2em;
@@ -181,19 +175,12 @@ footer ul li a:hover {
     padding: 0.7em 0 0 0;
   }
   header img {
-    width: 5em;
-    height: auto;
-    margin: 0;
-    padding: 1em 0 0 2em;
+    padding: 1.1em 0 0 2em;
   }
-  nav {
-    font-size: 0.6em;
-  }
-  /*
   nav li {
     width: 18em;
+    padding: 0;
   }
-  */
   .top {
     display: block;
     float: left;

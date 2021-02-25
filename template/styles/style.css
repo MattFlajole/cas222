@@ -160,6 +160,13 @@ footer ul li a:hover {
   nav {
     font-size: 0.4em;
   }
+  Nav ul {
+    padding: 1.2em 0 0 0;
+  }
+  nav li {
+    width: 16.6em;
+    padding: 0;
+  }
   main h2 {
     font-size: 2em;
     padding: 1em 0 0 0.5em;
@@ -182,6 +189,11 @@ footer ul li a:hover {
   nav {
     font-size: 0.6em;
   }
+  /*
+  nav li {
+    width: 18em;
+  }
+  */
   .top {
     display: block;
     float: left;

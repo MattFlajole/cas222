@@ -12,102 +12,74 @@ body {
 }
 header {
   width: 100%;
-  height: 10em;
-  background: url("../images/header_background.png");
-  background-size: cover;
+  height: 6em;
+  background-image: url("../images/header_background.png");
+  background-size: auto;
   display: inline-block;
-  border-bottom: 1px solid #efefef;
-}img {
+  margin: 0;
+}
+header img {
    float: left;
-   width: 8em;
+   width: 6em;
    height: auto;
-   padding: 1.8em 0 0 2em;
+   padding: 1.3em 0 0 2em;
  }
 h1 {
-  .headingStyle("Lemonada", cursive; @darkColor1; 3em);
+  .headingStyle("Lemonada", cursive; @color1; 1.3em);
   .textCenter;
   padding: 1.1em 0 1em .5em;
+  text-shadow: @darkColor .06em .05em;
 }
-.topnav {
-  width: 80%;
-}
-.topnav > a {
-  display: none;
-}
-.topnav ul {
-  list-style: none;
-  height: 100%;
-  text-align: right;
-}
-.topnav ul li {
-  display: inline-block;
-  margin: 0 20px;
-  line-height: 70px;
-  height: 100%;
-}
-.topnav ul li a {
-  color: #565A5C;
-  text-decoration: none;
-}
-.topnav ul li a.cta {
-  padding: 10px 20px;
-  color: white;
-  background: #E78D5C;
-}
-
-.hamburger-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  padding: 20px;
+nav {
+  .textCenter;
+  background-color: @darkColor;
+  font-size: .3em;
   width: 100%;
-  height: 100%;
-  min-width: 100vw;
-  min-height: 100vh;
-  background: #2B3F58;
+  height: 6.5em;
+  ul {
+    .noBull;
+    line-height: 1em;
+    li {
+      display: inline-block;
+      .radiusBgColor(8px; @lightColor3);
+      Padding: 1em;
+      margin: .3em;
+      a {
+        font-size: 2.5em;
+        .noLine;
+        &:link {
+          color: @lightColor;
+        }
+        &:visited {
+          color: @color4;
+        }
+        &:hover {
+          .expand;
+        }
+      }
+    }
+  }
 }
-.hamburger-menu ul {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  list-style: none;
-}
-.hamburger-menu ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  border-bottom: 2px solid white;
-}
-.close {
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  color: white;
-  font-size: 35px;
-  text-decoration: none;
-}main {
+main {
    padding: 1em;
    width: 100%;
    .photo {
      border: 1px solid @greyColor3;
    }
-   aside {
-     .textCenter;
-     background-color: #ccc;
-
-   }
    h2 {
      .headingStyle("Lemonada", cursive; @color1; 1.4em);
      .textCenter;
+     text-shadow: @darkColor 2px 2px 2px;
    }
    h3 {
      .headingStyle("Lemonada", cursive; @color2; 1.2em);
      .textCenter;
+     text-shadow: @darkColor 2px 2px 2px;
    }
+  aside {
+    .textCenter;
+    background-color: #efefef;
+  }
    p {
      font-weight: bold;
      margin-bottom: 1em;
@@ -121,7 +93,6 @@ footer {
   padding-top: 1em;
 
   h3 {
-    text-decoration: underline;
     .headingStyle("Lemonada", cursive; @lightColor; 1em);
   }
 
@@ -152,173 +123,43 @@ footer {
     }
   }
 }
-@media screen and (max-width: 1000px)
-{
-  .topnav ul {
-    display: none;
-  }
-  .topnav > a {
-    display: block;
-    height: 100%;
-    line-height: 70px;
-    float: right;
-    color: lightgrey;
-    font-size: 20px;
-  }
-
-  .hamburger-menu.active {
-    display: block;
-  }
-}
-
-
-
-/*
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-
-.topnav .icon {
-  display: none;
-}
-
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-    z-index: 9999999999;
-  }
-  .topnav.responsive {
-      position: relative;
-  }
-  .topnav.responsive .icon {
-      font-size:15px;
-      position: absolute;
-      right: 0;
-      top: 0;
-  }
-  .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-
-    .topnav.responsive .dropdown {
-      float: none;
-    }
-
-    .topnav.responsive .dropdown-content {
-      position: relative;
-    }
-
-    .topnav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-}
-*/
-
-
-/*
-nav {
-  background-color: lightblue;
-  .hamburger{
-    background:none;
-    position:relative;
-    top:0;
-    right:0;
-    line-height:45px;
-    padding:5px 15px 0 15px;
-    color:#999;
-    border:0;
-    font-size:1.4em;
-    font-weight:bold;
-    cursor:pointer;
-    outline:none;
-    z-index:10000000000000;
-  }
-  .cross{
-    background:none;
-    position:relative;
-    padding:7px 15px 7px 15px;
-    color:#999;
-    border:0;
-    font-size:3em;
-    line-height:65px;
-    font-weight:bold;
-    cursor:pointer;
-    outline:none;
-    z-index:10000000000000;
-  }
-  .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center;}
-  .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-  .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-  .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-  .menu ul li a { text-decoration:none;  margin: 0; color:#666;}
-  .menu ul li a:hover {  color: #666; text-decoration:none;}
-  .menu a{text-decoration:none; color:#666;}
-  .menu a:hover{text-decoration:none; color:#666;}
-}
-*/
-
-
-
-
-/*
-@media only screen and (min-width: 480px)  {
+@media screen and (min-width: 480px) {
   header {
-    height: 10em;
-    img {
-      width: 7rem;
-      padding: 1.5em 0 0 2em;
-    }
+    height: 4.5em;
   }
   h1 {
-    font-size: 2.5em;
+    font-size: 1.6em;
     padding: 1em 0 0 .5em;
   }
-  .hamburger, .cross {
-    display: none;
+  header img {
+    width: 4.5em;
+    height: auto;
+    padding: 1em 0 0 1em;
   }
-  .menu a {
-    position: relative;
-    background-color: lightblue;
-    display: inline-block;
+  nav {
+    font-size: .4em;
   }
   main h2 {
     font-size: 2em;
     padding: 1em 0 0 .5em;
   }
 }
-
 @media only screen and (min-width: 768px) {
   header {
-    padding: 1.5em 3rem 0 3em;
-    header h1 {
-    font-size: 2.8em;
-    padding: 1.5em 0 0 .5em;
-    }
+    height: 5em;
+  }
+  header h1 {
+    font-size: 2.3em;
+    padding: .7em 0 0 0;
+  }
+  header img {
+    width: 5em;
+    height: auto;
+    margin: 0;
+    padding: 1em 0 0 2em;
+  }
+  nav {
+    font-size: .7em;
   }
   .top {
     display: block;
@@ -330,11 +171,10 @@ nav {
     float: right;
     width: 15%;
     height: auto;
-    background-color: #ccc;
-    h3 {
-      font-size: 1.5em;
-      padding: 1em 0 0 .5em;
-
-    }
+    border-left: 1px solid @greyColor3;
   }
-}*/
+  h3 {
+    font-size: 1.5em;
+    padding: 1em 0 0 .5em;
+  }
+}

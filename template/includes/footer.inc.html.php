@@ -1,5 +1,5 @@
 <footer>
-    <h3>See us at</h3>
+    <h3>Credits</h3>
     <p>Copyright &copy; <?php echo date("Y"); ?> Ace In The Hole</p>
     <ul>
         <li><a href="<?php echo BASE_URL ?> /home">Home</a></li>

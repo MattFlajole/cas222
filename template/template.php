@@ -15,14 +15,15 @@ Programmer: Matthew Flajole
         <link href="styles/reset.css" rel="stylesheet" type="text/css">
         <link href="styles/helper.css" rel="stylesheet" type="text/css">
         <link href="styles/grid.css" rel="stylesheet" type="text/css">
-        <link href="styles/style.css" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <?php include 'includes/header.inc.html.php'; ?>
 
         <?php include 'includes/navigation.inc.html.php'; ?>
-<!--       <main>
+    <main>
             <section class="top">
                 <div class="photo">
                     <p>image goes here <br><br><br><br><br><br><br><br><br></p>
@@ -38,15 +39,25 @@ Programmer: Matthew Flajole
                     <li>List Item 3</li>
                     <li>List Item 4</li>
                     <li>List Item 5</li>
+                    <li>List Item 6</li>
+                    <li>List Item 7</li>
+                    <li>List Item 8</li>
+                    <li>List Item 9</li>
+                    <li>List Item 10</li>
+                    <li>List Item 11</li>
+                    <li>List Item 12</li>
+                    <li>List Item 13</li>
+                    <li>List Item 14</li>
+                    <li>List Item 15</li>
+                    <li>List Item 16</li>
+                    <li>List Item 17</li>
+                    <li>List Item 18</li>
+                    <li>List Item 19</li>
+                    <li>List Item 20</li>
                 </ul>
             </aside>
         </main>
--->
+
         <?php include 'includes/footer.inc.html.php'; ?>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-        <script type="text/javascript" src="scripts/aith.js"></script>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon"
-    </body>
 </html>

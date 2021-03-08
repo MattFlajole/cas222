@@ -2,7 +2,7 @@
 
 <!--
 Assignment Name: Forms
-File Name: reservations\reservations.html.php
+File Name: reservationss\reservationss.html.php
 Date: 02/28/2021
 Programmer: Matthew Flajole
 -->
@@ -27,7 +27,7 @@ Programmer: Matthew Flajole
             <?php include '../includes/navigation.inc.html.php'; ?>
 
             <main>
-                <h2>Book a Reservation</h2>
+                <h2>Registration</h2>
                 <aside class="sidebar">
                     <div class="fee">
                         <h3>Registration Fees</h3>
@@ -51,7 +51,7 @@ Programmer: Matthew Flajole
                     </div>
                 </aside>
                 <section class="top">
-                    <div id="reservations">
+                    <div id="reservationss">
                         <form method="post" action=" ">
                             <div class="hint">Required fields are marked with an asterisk (*).</div>
                             <input name="honeypot" type="text" value="" id="honeypot" class="honeypot" />

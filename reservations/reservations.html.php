@@ -27,7 +27,7 @@ Programmer: Matthew Flajole
             <?php include '../includes/navigation.inc.html.php'; ?>
 
             <main>
-                <h2>Registration</h2>
+                <h2>Register for events</h2>
                 <aside class="sidebar">
                     <div class="fee">
                         <h3>Registration Fees</h3>

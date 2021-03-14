@@ -247,12 +247,12 @@ footer ul li a:hover {
   .top {
     display: block;
     float: left;
-    width: 83%;
+    width: 75%;
     height: auto;
   }
   aside {
     float: right;
-    width: 17%;
+    width: 25%;
     height: auto;
     border-left: 1px solid #3c3c3c;
   }
@@ -261,4 +261,252 @@ footer ul li a:hover {
     padding: 1em 0 0 0.5em;
   }
 }
+/*
+@import 'palette.less';
+@import 'mixins.less';
+
+!*
+Assignment Name: Ace in the Hole: css
+File Name: styles\style.less
+Date: 02/28/2021
+Programmer: Matthew Flajole
+*!
+
+body {
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+  line-height: 28px;
+  background-color: @lightColor;
+  color: @darkColor;
+  width: 100%;
+  height: auto;
+}
+header {
+  width: 100%;
+  height: 6em;
+  background-image: url("../images/header_background.png");
+  background-size: auto;
+  display: inline-block;
+  margin: 0;
+}
+header img {
+   float: left;
+   width: 5em;
+   height: auto;
+   padding: 1.3em 0 0 2em;
+ }
+h1 {
+  .headingStyle("Lemonada", cursive; @color1; 1.3em);
+  .textCenter;
+  padding: 1.1em 0 1em .5em;
+  text-shadow: @darkColor .06em .05em;
+}
+nav {
+  .textCenter;
+  background-color: @darkColor;
+  font-size: .3em;
+  width: 100%;
+  height: 6.5em;
+  ul {
+    .noBull;
+    line-height: 1em;
+    li {
+      display: inline-block;
+      .radiusBgColor(8px; @lightColor3);
+      Padding: 1em;
+      margin: .3em;
+      a {
+        font-size: 2.5em;
+        .noLine;
+        &:link {
+          color: @lightColor;
+        }
+        &:visited {
+          color: @color4;
+        }
+        &:hover {
+          .expand;
+        }
+      }
+    }
+  }
+}
+main {
+  padding: 1em;
+  width: 100%;
+}
+.photo {
+  border: 1px solid @greyColor3;
+}
+h2 {
+  .headingStyle("Lemonada", cursive; @color1; 1.4em);
+  .textCenter;
+  text-shadow: @darkColor 2px 2px 2px;
+  margin-bottom: 1em;
+}
+h3 {
+  .headingStyle("Lemonada", cursive; @color1; 1.2em);
+  .textCenter;
+  text-shadow: @darkColor 2px 2px 2px;
+}
+aside {
+  .textCenter;
+  li {
+    font-size: 1em;
+  }
+}
+p {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+#honeypot {
+  display: none;
+}
+form {
+  background-color: @lightestColor1;
+  display: block;
+  float: left;
+  font-family: "Open Sans", serif;
+  text-align: center;
+  padding: 1em 1em 1em 4em;
+}
+.hint {
+  font-size: 1.2em;
+  text-align: center;
+}
+input {
+  display: block;
+  clear: left;
+  margin-bottom: 1em;
+}
+textarea {
+  display: block;
+  clear: left;
+  margin-bottom: 1em;
+  width: 20em;
+  height: 3em;
+}
+text {
+  display: block;
+  clear: left;
+  margin-bottom: 1em;
+  width: 8em;
+  height: 2em;
+}
+label {
+  display: inline-block;
+  clear: left;
+  float: left;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  padding-right: 1.5em;
+  text-align: left;
+  width: 20em;
+}
+select {
+  display: block;
+  clear: both;
+  float: left;
+  font-size: 1em;
+  margin-bottom: 1em;
+  padding-right: 1.5em;
+  text-align: right;
+  width: 11.8em;
+  height: 2em;
+}
+footer {
+  background-color: @darkColor;
+  color: @lightColor1;
+  clear: both;
+  .textCenter;
+  padding-top: 1em;
+
+  h3 {
+    .headingStyle("Lemonada", cursive; @lightColor; 1em);
+  }
+
+  p {
+  }
+
+  ul {
+    .textCenter;
+    .noBull;
+
+    li {
+      display: inline-block;
+      .noLine;
+
+      a {
+        &:link {
+          color: @lightColor5;
+        }
+
+        &:visited {
+          color: @lightColor3;
+        }
+
+        &:hover {
+          .expand;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  header {
+    height: 5em;
+  }
+  h1 {
+    font-size: 1.6em;
+    padding: 1em 0 0 .5em;
+  }
+  header img {
+    padding: .5em 0 0 1em;
+  }
+  nav {
+    font-size: .4em;
+  }
+  Nav ul {
+    padding: 1.2em 0 0 0;
+  }
+  main h2 {
+    font-size: 2em;
+    padding: 1em 0 0 .5em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    height: 5em;
+  }
+  header h1 {
+    font-size: 2.3em;
+    padding: .7em 0 0 0;
+  }
+  header img {
+    padding: 1.1em 0 0 2em;
+  }
+  nav li {
+    width: 18em;
+    padding: 0;
+  }
+  .top {
+    display: block;
+    float: left;
+    width: 70%;
+    height: auto;
+  }
+  aside {
+    width: 25%;
+    height: auto;
+  }
+!*  .fee {
+    width: 15%;
+    length: 100%;
+  }*!
+  h3 {
+    font-size: 1.5em;
+    padding: 1em 0 0 .5em;
+  }
+}
+*/
 /*# sourceMappingURL=style.css.map */

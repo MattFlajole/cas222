@@ -1,7 +1,7 @@
 <?php
 
 /* Assignment Name: Forms
-File Name: reservations\index.php
+File Name: registration\index.php
 Date: 02/28/2021
 Programmer: Matthew Flajole
 */
@@ -25,7 +25,7 @@ if (isset($_POST['myname']) && !($_POST['honeypot']))
     $accommodations = $_POST['myaccommodations'];
 
     try {
-        $sql = 'INSERT INTO reservations SET
+        $sql = 'INSERT INTO registration SET
           name = :name,
           age = :age,
           role = :role,
@@ -47,7 +47,7 @@ if (isset($_POST['myname']) && !($_POST['honeypot']))
         $s->bindValue(':emergname', $_POST['myemergname']);
         $s->bindValue(':emergphone', $_POST['myemergphone']);
         $s->bindValue(':gender', $_POST['mygender']);
-        $s->bindValue(':shirtsize', $_POST['myshirtsize']);
+        $s->bindValue(':shirtsizree', $_POST['myshirtsize']);
         $s->bindValue(':satevent', $_POST['mysatevent']);
         $s->bindValue(':sunevent', $_POST['mysunevent']);
         $s->bindValue(':accommodations', $_POST['myaccommodations']);
@@ -62,7 +62,7 @@ if (isset($_POST['myname']) && !($_POST['honeypot']))
 }
 else {
 
-    include 'reservations.html.php';
+    include 'registration.html.php';
 }
 
 

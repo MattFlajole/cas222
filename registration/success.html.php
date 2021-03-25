@@ -26,8 +26,8 @@ Programmer: Matthew Flajole
         <?php include '../includes/navigation.inc.html.php'; ?>
 
         <main>
-            <h2>Thank you!</h2>
-            <p>Our records show you submitted the following:<br>
+            <h2>You have successfully registered for event!</h2>
+            <p>Our records show that you have submitted the following information:<br>
                 Name: <?php echo $name ?><br>
                 Age: <?php echo $age ?><br>
                 Role: <?php echo $role ?><br>
@@ -40,6 +40,7 @@ Programmer: Matthew Flajole
                 Saturday Events: <?php echo $satevent ?><br>
                 Sunday Events: <?php echo $sunevent ?><br>
                 Special Accommodations: <?php echo $accommodations ?><br>
+                You will receive conformation email at <?php echo $email ?>.
             </p>
         </main>
     </body>

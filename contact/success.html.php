@@ -20,9 +20,8 @@
     <?php include '../includes/navigation.inc.html.php'; ?>
 
     <main>
-        <h1>Success</h1>
-        <p>If <?php echo $email ?> is your correct email address,<br> a cheerful member of our staff will be in contact with you soon. Thank You!
-        </p>
+        <h1>Thank you very much for contacting us!</h1>
+        <p>We have received the following message From <?php echo $email ?> <br> <?php echo $message ?><br> A cheerful member of our staff will be in contact with you soon. Thank You!<br>If the email address you entered is not correct, please try again.</p>
     </main>
 
     <?php include '../includes/footer.inc.html.php'; ?>

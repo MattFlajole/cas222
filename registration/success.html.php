@@ -40,7 +40,7 @@ Programmer: Matthew Flajole
                 Saturday Events: <?php echo $satevent ?><br>
                 Sunday Events: <?php echo $sunevent ?><br>
                 Special Accommodations: <?php echo $accommodations ?><br>
-                You will receive conformation email at <?php echo $email ?>.
+                You will receive a conformation email at <?php echo $email ?>.
             </p>
         </main>
     </body>

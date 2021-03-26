@@ -79,9 +79,6 @@ main {
   padding: 1em;
   width: 100%;
 }
-.photo {
-  border: 1px solid #3c3c3c;
-}
 h2 {
   color: #ff0000;
   font-family: "Lemonada", cursive;
@@ -109,7 +106,7 @@ h3 {
 }
 aside {
   text-align: center;
-  background-color: #efffff;
+  background-color: #FFFFFF;
 }
 aside li {
   font-size: 1.2em;
@@ -265,9 +262,12 @@ footer ul li a:hover {
     float: right;
     width: 25%;
     height: auto;
-    border-left: 1px solid #3c3c3c;
   }
   h3 {
+    font-size: 1.5em;
+    padding: 1em 0 0 0.5em;
+  }
+  h4 {
     font-size: 1.5em;
     padding: 1em 0 0 0.5em;
   }

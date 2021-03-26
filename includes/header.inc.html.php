@@ -1,4 +1,6 @@
 <?php define('BASE_URL', '/cas222'); ?>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="DMVKVY2O"></script>
 
 <!--
 Assignment Name: Ace in the Hole: Includes

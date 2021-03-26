@@ -26,8 +26,8 @@ Programmer: Matthew Flajole
             <?php include '../includes/navigation.inc.html.php'; ?>
 
         <main>
-            <h2>Register for events</h2>
             <section class="top">
+                <h2>Register for events</h2>
                 <div id="registration">
                     <form method="post" action=" ">
                         <div class="hint">Required fields are marked with an asterisk (*).</div>
@@ -104,6 +104,22 @@ Programmer: Matthew Flajole
                         <li>Accurate Chip  Timing for competitive races</li>
                         <li>Ace in the Hole Multisport Weekend Tech Shirt</li>
                         <li>Post-event Party & entertainment</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Starting Times</h3>
+                    <h4>Saturday</h4>
+                    <ul>
+                        <li>Long Course Triathlon: 7:00 AM</li>
+                        <li>Olympic Triathlon: 7:30 AM</li>
+                        <li>10K: 7:15 AM</li>
+                        <li>Half Marathon: 7:15 AM</li>
+                    </ul>
+                    <h4>Sunday</h4>
+                    <ul>
+                        <li>Sprint Triathlon: 8:00 AM</li>
+                        <li>Try-a-Tri: 8:20 AM</li>
+                        <li>Splash n Dash: 12:00 PM</li>
                     </ul>
                 </div>
                 <div>
